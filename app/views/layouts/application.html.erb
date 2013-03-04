@@ -20,8 +20,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= yield %>
-  
+  <div id="page">
+    <section id="content">
+      <%= yield %>
+    </section>
+    <section id="navigation">
+      <ul class="menu">
+        <li><a href="#foo">Foo</a></li>
+        <li><a href="#bar">Bar</a></li>
+        <li><a href="#baz">Baz</a></li>
+        <li><a href="#quux">Quux</a></li>
+      </ul>
+    </section>
+  </div>
   <%= javascript_include_tag "application" %>
 </body>
 </html>
